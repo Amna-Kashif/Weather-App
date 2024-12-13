@@ -1,0 +1,115 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    background-image: url(weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.card:hover {
+    transition: transform 1s ease;
+    transform: scale(1.1);
+    }
+
+/* ==== Mobile View ==== */
+@media (max-width: 576px) {
+    .div {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+/* ===== laptop Screen View ===== */
+@media (min-width: 576px) {
+    .div {
+        width: 60%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    input {
+        width: 80%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    button {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+}
+
+.card {
+    background: linear-gradient(to bottom, #20c2aa, #4f6b91);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #fff;
+    width: 100%;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body h5 {
+    padding: 12px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card-body h5 span {
+    display: block;
+}
+
+.card-body hr {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    border-radius: 50%;
+    padding: 8px;
+}
